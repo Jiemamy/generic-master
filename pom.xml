@@ -8,7 +8,7 @@
   <name>Generic Master POM</name>
   <description>
     The parent POM that contains convenient Maven settings.  Children inherit it.
-    You must override project.licenses, project.organization, project.distributionManagement.repository and
+    You must override project.description project.licenses, project.distributionManagement.repository and
     project.distributionManagement.snapshotRepository properties correctly.
   </description>
   <inceptionYear>2010</inceptionYear>
@@ -19,10 +19,6 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <organization>
-    <name>Jiemamy Project</name>
-    <url>http://jiemamy.org/</url>
-  </organization>
   <build>
     <plugins>
       <plugin>
@@ -223,7 +219,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <configuration>
           <encoding>UTF-8</encoding>
-          <configLocation>checkstyle.xml</configLocation>
+          <configLocation>.settings/checkstyle.xml</configLocation>
         </configuration>
       </plugin>
       <plugin>
