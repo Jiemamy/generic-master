@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>generic-master</artifactId>
   <packaging>pom</packaging>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.1</version>
   <name>Generic Master POM</name>
   <description>
     The parent POM that contains convenient Maven settings.  Children inherit it.
