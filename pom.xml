@@ -44,7 +44,7 @@
           <includes>
             <include>**/*Test.java</include>
           </includes>
-          <argLine>-Xms512M -Xmx512M</argLine>
+          <argLine>-enableassertions -Xms512M -Xmx512M</argLine>
         </configuration>
       </plugin>
       <plugin>
