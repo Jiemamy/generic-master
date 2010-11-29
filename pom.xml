@@ -5,7 +5,7 @@
   <artifactId>generic-master</artifactId>
   <packaging>pom</packaging>
   <name>Generic Master POM</name>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.2</version>
   <description>
     The parent POM that contains convenient Maven settings.  Children inherit it.
     You must override project.description project.licenses, project.distributionManagement.repository and
