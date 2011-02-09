@@ -5,11 +5,15 @@
   <artifactId>generic-master</artifactId>
   <packaging>pom</packaging>
   <name>Generic Master POM</name>
-  <version>0.1.4-SNAPSHOT</version>
+  <version>0.2.0-SNAPSHOT</version>
   <description>
     The parent POM that contains convenient Maven settings.  Children inherit it.
-    You must override project.description project.licenses, project.distributionManagement.repository and
-    project.distributionManagement.snapshotRepository properties correctly.
+    You must override following properties correctly.
+    - project.description
+    - project.inceptionYear
+    - project.licenses
+    - project.distributionManagement.repository
+    - project.distributionManagement.snapshotRepository
   </description>
   <inceptionYear>2010</inceptionYear>
   <licenses>
@@ -87,43 +91,11 @@
   </build>
   <repositories>
     <repository>
-      <id>repo1.maven.org-eclipse</id>
-      <name>Central Repository - Eclipse</name>
-      <url>http://repo1.maven.org/eclipse</url>
-    </repository>
-    <repository>
-      <id>codehaus.org-napshots</id>
-      <url>http://snapshots.repository.codehaus.org</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-    <repository>
-      <id>jboss.org</id>
-      <name>JBoss</name>
-      <url>http://repository.jboss.org/maven2</url>
-    </repository>
-    <repository>
       <id>jiemamy.org-release</id>
       <name>Jiemamy Repository</name>
       <url>http://maven.jiemamy.org/release</url>
     </repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>codehaus.org-napshots</id>
-      <url>http://snapshots.repository.codehaus.org</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
   <reporting>
     <plugins>
       <plugin>
@@ -273,7 +245,7 @@
     <site>
       <id>jiemamy-report</id>
       <name>maven-jiemamy-plugin-site</name>
-      <url>scp://report.jiemamy.org/var/www/report.jiemamy.org/${project.artifactId}/${project.version}</url>
+      <url>scp://maven.jiemamy.org/var/www/maven.jiemamy.org/site/${project.artifactId}/${project.version}</url>
     </site>
     <repository>
       <id>jiemamy-release-repository</id>
