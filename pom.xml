@@ -5,7 +5,7 @@
   <artifactId>generic-master</artifactId>
   <packaging>pom</packaging>
   <name>Generic Master POM</name>
-  <version>0.2.1</version>
+  <version>0.2.2-SNAPSHOT</version>
   <description>
     The parent POM that contains convenient Maven settings.  Children inherit it.
     You must override following properties correctly.
@@ -25,9 +25,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/leto/generic-master/tags/generic-master-0.2.1</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/generic-master/tags/generic-master-0.2.1</developerConnection>
-    <url>http://fisheye.jiemamy.org/browse/leto/generic-master/tags/generic-master-0.2.1</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/leto/generic-master/trunk</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/generic-master/trunk</developerConnection>
+    <url>http://fisheye.jiemamy.org/browse/leto/generic-master/trunk</url>
   </scm>
   <build>
     <plugins>
